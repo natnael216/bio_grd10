@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade 10 Biology Mini App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Telegram Dark Style */
+        body {
+            background-color: #1e1e2d;
+            /* Telegram-style dark */
+            color: #fff;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        ::selection {
+            background: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #55acee;
+            /* Highlight for title */
+        }
+
+        p {
+            white-space: pre-wrap;
+            line-height: 1.6;
+            margin-top: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        #content-wrapper {
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        @media screen {
+            body:after {
+                content: '';
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                pointer-events: none;
+                background: rgba(0, 0, 0, 0);
+                z-index: 9999;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content-wrapper">
+        <h1 id="title">Initializing...</h1>
+        <p id="content">Waiting for Telegram Web App data...</p>
+    </div>
+
+    <!-- Telegram Web App SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <script>
+        // Biology lesson topics for each deep link
+        const topics = {
+            "ab1gggggggggguukjnnnfhududhdhfhfhfhdhdhdteyeurtwjfitkgkgjgoyoyouljkhdncncmvmvhdfafarqrqrqwtweerdffhfjhfbdfbcbfbcbfbdbwfwfqeadzcsvdbdvsfafzcggggggab1gggggggggguukjnnnfhududhdhfhab1gggggggggguukjnnnfhududhdhfhfhfhdhdhdteyeurtwjfitkgkgjgoyoyouljkhdncncmvmvhdfafarqrqrqwtweerdffhfjhfbdfbcbfbcbfbdbwfwfqeadzcsvdbdvsfafzcggggggab1gggggggggguukjnnnfhududhdhfhfhfhdhdhdteyeurtwjfitkgkgjgoyoyouljkhdncncmvmvhdfafarqrqrqwtweerdffhfjhfbdfbcbfbcbfbdbwfwfqeadzcsvdbdvsfafzcgggggghhhhhjjjjjjjjjjjlllllllllllllllpppppppppppppppppppppppppppppppijihjfdhisccscncbvshiwdjxxsiajajxjxjhshsuqjsccghasdertrggfxvbnmmooplhteqazvavabxvbcgcssetxdfjfhdehejqfsvhsjrykfjsvbykfbfdfddssawwwedxcvafsvxbcncbncvmgmhmkhykpiipputuhdhsvshdhdhdbxvdbdbNewtonghggghghghghgh": {
+                title: "Unit 1: Introduction to Biology",
+                content: `1.1 The Meaning and Importance of Biology
+🌿The scope of biology is so broad that it contains many branches and sub-disciplines.
+የባዮሎጂ scope እጅግ ሰፊ በመሆኑ ብዙ branche እና sub-disciplineን አካቷል።
+
+🔬In this unit, thus, you will study the sub-fields of biology.
+በዚህ ክፍል ደግሞ የባዮሎጂ sub-disciplineን ታጠናላችሁ።
+
+📋Based on the type of organism it studies, biology is subdivided into three:
+ባዮሎጂ የሚያጠናውን organism  መሠረት በማድረግ በሦስት ዋና ዋና ክፍሎች ይከፈላል፦
+
+Zoology (ዞኦሎጂ)
+
+Botany (ቦታኒ)
+
+Microbiology (ማይክሮባዮሎጂ)
+
+🔗In addition to these three sub-fields, there is a huge array of sub-disciplines or fields of biology.
+ከነዚህ ሦስት ንዑስ መስኮች በተጨማሪ፣ በርካታ ሌሎች የባዮሎጂ sub-disciplines ወይም ዘርፎች አሉ።
+
+🕰️Many have been around for hundreds of years whilst others are far newer and are often developing very rapidly.
+ብዙዎቹ ለዘመናት የቆዩ ሲሆኑ፣ ሌሎች ደግሞ በጣም አዲስና በፍጥነት እያደጉ ያሉ ናቸው።
+
+📚The three major sub-divisions and their area of concern are described in the next page.
+ሦስቱ ዋና ዋና ንዑስ ክፍሎችና የሚያሳስቧቸው ወይም የሚያጠኗቸው ጉዳዮች በሚቀጥለው ገጽ ተብራርተዋል።
+This is an excellent idea to make the explanation clear and engaging! I will restructure the previous explanation using the requested format (English statement, then Amharic translation) and incorporate relevant emojis.
+
+## Explanation of Zoology (Animal Biology)
+
+**Animal biology**, also known as **zoology**, is the study of **animals**. 🦁
+**የእንስሳት ሕይወት ጥናት**፣ **ዙዎሎጂ** ተብሎም ይጠራል፣ የ**እንስሳትን** የሚመለከት የጥናት መስክ ነው። 🦁
+
+This field covers all aspects of animal life, from their earliest stages of development (like in an embryo) to their final, mature adulthood. 🥚➡️🦍
+ይህ መስክ የእንስሳትን ሕይወት ከቅድመ-ፅንስ እድገት ጀምሮ እስከ ሙሉ እድገታቸው ድረስ ያሉትን ሁሉንም ገጽታዎች ይሸፍናል። 🥚➡️🦍
+
+It also examines their **behavior**, such as how they interact with other animals or how they find food. 🐾🔍
+በተጨማሪም፣ የ**ባህሪያቸውን** (ለምሳሌ ከሌሎች እንስሳት ጋር እንዴት እንደሚግባቡ ወይም ምግብ እንዴት እንደሚፈልጉ) ይመረምራል። 🐾🔍
+
+Zoology also looks at their **genetics** and inheritance. 🧬
+ዙዎሎጂ የ**ዘረመል ስርዓታቸውን** እና ውርሳቸውን ይመለከታል። 🧬
+
+***
+
+### Specialized Fields (የተለዩ የጥናት ዘርፎች)
+
+**Herpetology** is the study of **reptiles** (like snakes) and **amphibians** (like frogs). 🐍🐸
+**ሄርፐቶሎጂ** የ**ተሳቢ እንስሳትን** (እንደ እባቦች) እና **አምፊቢያዎችን** (እንደ እንቁራሪቶች) ያጠናል። 🐍🐸
+
+**Ichthyology** is the study of **fish**. 🐠
+**ኢክቲዎሎጂ** የ**ዓሣን** ጥናት ነው። 🐠
+
+**Mammalogy** is the study of **mammals** (like elephants, bats, and humans). 🐘🦇👨
+**ማማሎሎጂ** የ**አጥቢ እንስሳትን** (እንደ ዝሆኖች፣ የሌሊት ወፎች እና ሰዎች) ጥናት ነው። 🐘🦇👨
+
+**Ornithology** is the study of **birds**. 🦅
+**ኦርኒቶሎጂ** የ**ወፎችን** ጥናት ነው። 🦅
+
+**Entomology** is the study of **insects**. 🦋🐜
+**ኢንተሞሎጂ** የ**ነፍሳትን** ጥናት ነው። 🦋🐜
+`
+            },
+            "ab2gggggggggguukjnnnfhududhdhfhfhfhdhdhdteyeurtwjfitkgkgjgoyoyouljkhdncncmvmvhdfafarqrqrqwtweerdffhfjhfbdfbcbfbcbfbdbwfwfqeadzcsvdbdvsfafzcggggggab1gggggggggguukjnnnfhududhdhfhab1gggggggggguukjnnnfhududhdhfhfhfhdhdhdteyeurtwjfitkgkgjgoyoyouljkhdncncmvmvhdfafarqrqrqwtweerdffhfjhfbdfbcbfbcbfbdbwfwfqeadzcsvdbdvsfafzcggggggab1gggggggggguukjnnnfhududhdhfhfhfhdhdhdteyeurtwjfitkgkgjgoyoyouljkhdncncmvmvhdfafarqrqrqwtweerdffhfjhfbdfbcbfbcbfbdbwfwfqeadzcsvdbdvsfafzcgggggghhhhhjjjjjjjjjjjlllllllllllllllpppppppppppppppppppppppppppppppijihjfdhisccscncbvshiwdjxxsiajajxjxjhshsuqjsccghasdertrggfxvbnmmooplhteqazvavabxvbcgcssetxdfjfhdehejqfsvhsjrykfjsvbykfbfdfddssawwwedxcvafsvxbcncbncvmgmhmkhykpiipputuhdhsvshdhdhdbxvdbdbNewtonghggghghghghgh": {
+                title: "Unit 1: Introduction to Biology",
+                content: `What is a scientific study?
+🔬What is a scientific study?
+ሳይንሳዊ ጥናት ምንድን ነው?
+🧬 Biologists study about living things using a scientific method that involves asking questions❓, suggesting possible answers💭; and testing for the validity of the answers through experimentation⚗️.
+ባዮሎጂስቶች ሕይወት ስላላቸው ነገሮች የሚያጠኑት (scientific method) በመጠቀም ነው። ይህም ማለት ጥያቄዎችን በመጠየቅ❓፣ ሊሆኑ የሚችሉ መልሶችን በመጠቆም💭 እና በእነዚህ መልሶች ትክክለኛነት ላይ ሙከራ (experimentation) በማድረግ⚗️ የሚካሄድ ነው።
+🔭 This scientific study follows the study of structures and processes that we can verify✅, observe👀 and measure📏, either directly or indirectly with the help of tools and technology, such as microscopes🔬.
+ይህ ሳይንሳዊ ጥናት የምንመረምራቸውን መዋቅሮችና ሂደቶች በጥናት የሚከተል ሲሆን፣ እነዚህንም በቀጥታ ወይም በተዘዋዋሪ መንገድ እንደ ማይክሮስኮፕ (microscopes)** 🔬 ባሉ መሳሪያዎችና ቴክኖሎጂዎች ማረጋገጥ✅፣ መመልከት👀ና መለካት📏 እንችላለን።
+🧪ሳይንሳዊ ጥናት እንዴት እንደሚካሄድ ለማሳየት የሚከተለውን ምሳሌ እንመልከት👇
+1️⃣ጥያቄ መጠየቅ (Asking a Question)
+🗣️ ጥያቄ፡ "የእጽዋት እድገት የሚወሰነው በብርሃን መጠን ነው?"💡
+2️⃣ሊሆን የሚችል መልስ መገመት (Suggesting a Possible Answer - Hypothesis)
+🧠 መላምት (Hypothesis): "Yes፣ በቂ ብርሃን የሚያገኝ ተክል በቂ ብርሃን ከማያገኝ ተክል በበለጠ ፍጥነት ያድጋል እና ይረዝማል።"🌱☀️
+3️⃣Testing through Experimentation ⚗️
+🧫 ሙከራ: ሁለት ተመሳሳይ ተክሎችን እንወስዳለን።
+🌿Group 1:አንዱን ተክል በቂ የፀሐይ ብርሃን ☀️ ባለበት ቦታ ላይ እናስቀምጣለን።
+🌿Group 2:ሌላኛውን ተክል በጣም ትንሽ የፀሐይ ብርሃን 🌤️ ባለበት ቦታ ላይ እናስቀምጣለን።
+📏Observe and Measure:በየሳምንቱ የተክሎቹን ቁመትና የቅጠሎችን ቁጥር እንለካለን (Measuring)።
+🧾Verify the Results:
+ከሁለት ሳምንታት በኋላ, በቂ ብርሃን ያገኘው ተክል 🌱 በቁመትም በቅጠልም ከጥላው ስር ካለው ተክል በልጦ ማደጉን እናረጋግጣለን ✅
+📊ማረጋገጫው:ያገኘነው የቁመት እና የቅጠል ቁጥር መለኪያ (data) የመጀመሪያውን መላምታችን ትክክለኛነት ያረጋግጣል 📈
+🌿 ይህ ሂደት "ብርሃን የእጽዋትን እድገትን ይወስናል"* የሚለውን መዋቅርና ሂደት በሙከራ⚗️፣ በመመልከት👀 እና በመለካት📏 ያረጋገጠ ሳይንሳዊ ጥናት ነው።
+🌍 What relationships does Biology have with other fields of natural sciences?
+ባዮሎጂ ከሌሎች የተፈጥሮ ሳይንስ ዘርፎች ጋር ያለው ግንኙነት ምንድን ነው?
+🔗 The study of biology is a point of merging information and tools from all natural sciences.
+የባዮሎጂ ጥናት ከሁሉም የተፈጥሮ ሳይንሶች መረጃን እና መሳሪያዎችን የሚያዋህድ (የሚያቀናጅ) መነሻ ነጥብ ነው⚛️
+🧪 For example information about naturally occurring elements in living organisms, chemical bonding, molecules, acids, bases and other related things can be studied using the tools and principles of **chemistry**.
+🧬 ለምሳሌ፦ ሕይወት ባላቸው ነገሮች ውስጥ፦
+* በተፈጥሮ ስለሚገኙ ንጥረ ነገሮች🌿
+* ስለ ኬሚካላዊ ትስስር (chemical bonding)🧲
+* ስለ ሞለኪውሎች💧
+* ስለ አሲዶች (acids)⚗️
+* ስለ ቤዞች (bases)🧫
+* እና ለሌሎች ተዛማጅ ነገሮች መረጃን ለማግኘት የኬሚስትሪን (Chemistry) መሳሪያዎችና መርሆዎች በመጠቀም ማጥናት እንችላለን🧪
+☀️ Other scientific concept like conversion of radiant energy into organic molecules by photo-synthesis 🌿 is studied with the knowledge of chemistry** and physics⚛️
+📚 ስለዚህ የባዮሎጂ ጥናት የሁሉም natural sciences ድምር ውጤት ነው 🌍`
+            }
+        };
+
+        // Function to update page content
+        function updateContent(topicKey) {
+            const titleElement = document.getElementById("title");
+            const contentElement = document.getElementById("content");
+            const topic = topics[topicKey];
+
+            if (topic) {
+                titleElement.textContent = topic.title;
+                contentElement.textContent = topic.content;
+            } else {
+                titleElement.textContent = "Welcome to Grade 10 Biology tutorials – stay with us!";
+                contentElement.textContent = "";
+            }
+        }
+
+        // Initialization
+        document.addEventListener('DOMContentLoaded', () => {
+            let topicKey = null;
+
+            if (window.Telegram && window.Telegram.WebApp) {
+                window.Telegram.WebApp.ready();
+                if (Telegram.WebApp.initDataUnsafe?.start_param) {
+                    topicKey = Telegram.WebApp.initDataUnsafe.start_param;
+                }
+
+                Telegram.WebApp.setBackgroundColor('#1e1e2d');
+                Telegram.WebApp.setHeaderColor('#1e1e2d');
+            }
+
+            // Fallback for testing in browser
+            if (!topicKey) {
+                const urlParams = new URLSearchParams(window.location.search);
+                topicKey = urlParams.get("topic");
+            }
+
+            updateContent(topicKey);
+        });
+    </script>
+</body>
+
+</html>
